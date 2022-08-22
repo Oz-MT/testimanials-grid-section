@@ -30,6 +30,7 @@ body {
   margin: 8rem auto 0;
   display: grid;
   /* grid-template-columns: 22.5% 32.5% 22.5% 22.5%; */
+  /* grid-template-columns: 2.25fr 3.25fr 2.25fr 2.25fr; */
   grid-template-columns: repeat(4, 1fr);
   padding: 0 1rem;
   gap: 2rem;
