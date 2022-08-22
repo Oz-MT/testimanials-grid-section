@@ -31,7 +31,7 @@
 
 ## How does my project look
 
-![testimanials grid section desktop](https://github.com/Oz-MT/testimanials-grid-section/blob/master/views/desktop%20view.png)
+![testimanials grid section desktop](https://github.com/Oz-MT/testimanials-grid-section/blob/master/views/desktop%20sm%20view.jpg)
 
 ## Objective
 
