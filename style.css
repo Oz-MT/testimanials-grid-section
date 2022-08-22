@@ -25,12 +25,14 @@ body {
 }
 
 .container {
-  /* width: 100%; */
-  width: 102rem;
+  width: 100%;
+  max-width: 95rem;
   margin: 8rem auto 0;
   display: grid;
-  grid-template-columns: 22.5% 32.5% 22.5% 22.5%;
-  gap: 1.5rem;
+  /* grid-template-columns: 22.5% 32.5% 22.5% 22.5%; */
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 1rem;
+  gap: 2rem;
 }
 
 .card {
@@ -90,21 +92,57 @@ body {
   margin: 2rem 0;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .card:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .card:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .card:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card:nth-of-type(5) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
   .card:nth-of-type(1) {
     grid-column: 1;
+    grid-row: 1;
   }
-
+  .card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
   .card:nth-of-type(3) {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
   }
-
   .card:nth-of-type(4) {
     grid-column: 1;
     grid-row: 4;
+  }
+  .card:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 5;
   }
 }
